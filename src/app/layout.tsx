@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   title: "Unfollower",
   description: "Liat orang yang tidak follow kita dan juga orang yang unfollow kita di Instagram ✌",
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
+    icon: "favicon.ico",
+    shortcut: "favicon.ico",
     apple: "apple-touch-icon.png",
   },
   openGraph: {
@@ -59,10 +59,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <meta name="theme-color" content="#FFC0CB" />
         <meta name="robots" content="index, follow" />
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="0c641c91-29c8-40df-8aad-014c850d0743"></script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
