@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   title: "Unfollower",
   description: "Liat orang yang tidak follow kita dan juga orang yang unfollow kita di Instagram ✌",
   icons: {
-    icon: "favicon.ico",
-    shortcut: "favicon.ico",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
     apple: "apple-touch-icon.png",
   },
   openGraph: {
@@ -42,8 +42,14 @@ export const metadata: Metadata = {
     description: "Liat orang yang tidak follow kita dan juga orang yang unfollow kita di Instagram ✌",
     images: ["https://arwildo.com/unfollower/unfollower-preview.webp"],
   },
-  viewport: "width=device-width, initial-scale=1",
 };
+
+// Separate viewport export
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 
 export default function RootLayout({
   children,
@@ -55,7 +61,6 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#FFC0CB" />
         <meta name="robots" content="index, follow" />
       </head>
