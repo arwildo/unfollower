@@ -128,7 +128,7 @@ export default function Home() {
 
           {/* Unfollowers List */}
           {filesUploaded && (
-            <div className="p-4 w-full bg-gray-100">
+            <div className="p-4 w-full bg-gray-100 overflow-y-auto max-h-[300px]">
               <h2 className="text-xl font-semibold mb-4 text-center">Unfollowers 👇</h2>
               <ul className="space-y-2">
                 {unfollowers.map((person, idx) => (
@@ -148,6 +148,7 @@ export default function Home() {
           )}
         </div>
       </div>
+      {/*TODO: add by arwildo software copyright*/}
 
       {/* Modal */}
       {showModal && (
