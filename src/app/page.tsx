@@ -168,7 +168,7 @@ export default function Home() {
           </div>
         )}
       </div>
-      <div className="text-center mt-8 text-gray-700 flex justify-center">
+      <div className="text-center mt-8 text-gray-700 flex justify-center pt-32 md: pt-8">
         <a href="https://arwildo.com" target="_blank" className="mb-4 mx-auto">
           <img 
             src="images/arwildo-software-cr.svg" 
