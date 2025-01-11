@@ -51,16 +51,15 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-pink-200">
-      <div className="flex flex-col md:flex-row h-screen bg-pink-200 p-8 md:px-14">
-        {/* Left Section */}
-        <div className="lg:w-1/3 w-full lg:h-full p-8 bg-pink-200 relative flex flex-col justify-center items-start">
-          <div
-            className="absolute inset-0 z-0 bg-center bg-no-repeat bg-contain"
-            style={{ backgroundImage: "url('images/hand_circle.png')" }}
-          />
-        </div>
-
+    <div className="bg-pink-200 min-h-screen flex flex-col">
+      <div className="flex flex-col md:flex-row flex-1 p-4 md:px-14">
+      {/* Left Section */}
+      <div className="lg:w-1/3 w-full p-8 bg-pink-200 relative flex flex-col justify-center items-center"> {/* Changed: added items-center */}
+        <div
+          className="absolute inset-0 z-0 bg-center bg-no-repeat bg-contain flex items-center justify-center" /* Changed: added flex, items-center, justify-center */
+          style={{ backgroundImage: "url('images/hand_circle.png')" }}
+        />
+      </div>
         {/* Right Section */}
         <div className="lg:w-2/3 w-full flex items-center justify-center">
           <div className="relative bg-white text-black rounded-[2rem] shadow-lg max-w-[375px] w-full aspect-[9/19.5] flex flex-col items-center justify-between overflow-hidden border-8 border-gray-800">
@@ -75,7 +74,7 @@ export default function Home() {
                   Instagram Unfollowers
                 </h1>
                 <p className="text-md text-gray-500 z-10 text-left">
-                  Liat orang yang tidak follow kita dan juga orang yang unfollow kita di Instagram ✌
+                  Lihat siapa yang berhenti mengikuti dan tidak mengikuti kamu di Instagram ✌
                 </p>
               </div>
               <div className="w-full">
@@ -168,14 +167,24 @@ export default function Home() {
           </div>
         )}
       </div>
-      <div className="text-center mt-8 text-gray-700 flex justify-center pt-32 md: pt-8">
-        <a href="https://arwildo.com" target="_blank" className="mb-4 mx-auto">
-          <img 
-            src="images/arwildo-software-cr.svg" 
-            alt="Arwildo Software Logo" 
-            className="w-28 h-auto" 
-          />
-        </a>
+
+      {/* Footer Section */}
+      <div className="bg-pink-200">
+        <p className="text-xs text-gray-600 text-center">
+          Tidak ada data yang tersimpan. Code aplikasi ini dapat dilihat{" "}
+          <a href="https://github.com/arwildo/unfollower/" target="_blank" rel="noopener nofollow">
+            <b>disini</b>
+          </a>.
+        </p>
+        <div className="flex justify-center my-4">
+          <a href="https://arwildo.com" target="_blank">
+            <img
+              src="images/arwildo-software-cr.svg"
+              alt="Arwildo Software Logo"
+              className="w-28 h-auto"
+            />
+          </a>
+        </div>
       </div>
     </div>
   );
