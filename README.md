@@ -1,10 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<p align=center><a href="https://arwildo.com/unfollower"><img src="https://arwildo.com/unfollower/favicon.ico" width="32"></img></a></p> 
 
-## Getting Started
+## Unfollower
+See Instagram unfollower or people that not follow you back.
 
-First, run the development server:
 
+### How to Install Localy
+1. Download the followers and following data through IG settings.
+
+2. Open the website
+<a href="https://arwildo.com/unfollower">arwildo.com/unfollower</a>
+
+3. Upload the `followers_1.json` and `following.json` files that you've downloaded from IG settings.
+
+5. Click Submit
+
+
+### Install
 ```bash
+npm install
 npm run dev
 # or
 yarn dev
@@ -13,24 +26,3 @@ pnpm dev
 # or
 bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
